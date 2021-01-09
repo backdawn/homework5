@@ -1,0 +1,76 @@
+body{
+	background-color: #B008D4;
+	font-family: 'Varela Round', sans-serif;
+}
+#menuBlock
+{
+	position: absolute;
+  	top: 30px;
+  	left: 15px;  
+  	z-index: 1;
+}
+#menuBlock a
+{
+  	text-decoration: none;
+  	color: #232323; 
+	transition: color 0.3s ease;
+}
+#menuBlock a:hover
+{
+	color: #47A6FF;
+}
+#menuBlock li:hover
+{
+  	background-color: #E5DBDB;
+}
+#menuBlock input
+{
+	display: block;
+	width: 40px;
+	height: 32px;
+  	position: absolute;
+  	top: -7px;
+  	left: -8px; 
+  	cursor: pointer;
+  	opacity: 0;
+  	z-index: 2;
+}
+#menuBlock span
+{
+  	display: block;
+  	width: 33px;
+  	height: 4px;
+  	margin-bottom: 5px;
+  	position: relative;
+  	background: #cdcdcd;
+  	border-radius: 7px; 
+  	z-index: 1; 
+}
+#menuBlock input:checked ~ span
+{
+  	background: #353535;
+}
+#menu
+{
+  	position: absolute;
+  	width: 250px;
+  	top: -25px;
+  	left: -10px;
+  	padding: 50px;
+  	padding-top: 50px;
+  	background: #E8E7E7;
+  	box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.85);
+  	border-radius: 7px; 
+  	list-style-type: none;
+  	transform: translate(0, -120%);
+  	transition: transform 0.5s;
+}
+#menu li
+{
+	padding: 10px 5px;
+  	font-size: 22px;
+}
+#menuBlock input:checked ~ ul
+{
+  	transform: none;
+}
